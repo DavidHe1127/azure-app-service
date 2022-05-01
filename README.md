@@ -15,6 +15,14 @@ Code is written in Solidity.
 
 Once deployed, each smart contract will be given a token/id to uniquelly identify it. Deployment/interactions with smart contracts require user to pay in ethers. The amount aligns with contract's size.
 
+#### How to update Smart Contract
+
+Smart Contract is immutable meaning it cannot be modified once deployed. This nature makes update challenging. One way to circumvent it is to use a proxy pattern.
+
+1. Define an address in the state. Have contract A point to another contract B where business rules is defined
+2. When update is needed, in the updated contract C, modify the state to re-point from B to C.
+3. Now your call is still made to contract A however it delegates the call to contract C.
+
 ### Ethereum
 
 A platform where you can deploy your smart contracts. It's powered by blockchain. Any addition of blocks to the chain will be handled by a node of the network and changes will be propagated and synced to other nodes on the same network.
