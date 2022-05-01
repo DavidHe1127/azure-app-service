@@ -22,3 +22,5 @@ A platform where you can deploy your smart contracts. It's powered by blockchain
 ### Web3.0
 
 DApp embodies the core of Web3.0. A different model than Web2.0 where servers are centralised.
+
+See [more](https://codluck.com/the-architecture-of-a-web-3-0-application-dapps/)
